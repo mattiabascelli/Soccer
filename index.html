@@ -75,8 +75,11 @@
 
                     const gz1 = document.getElementById('Goal1');
                     const gz2 = document.getElementById('Goal2');
+                    
                     //funzione che esegue il conteggio fino a 120
                     function conta90() {
+                        gz1.innerHTML = 0;
+                        gz2.innerHTML = 0;
                         var num_evemto = 0;
                         var counter = 1; //contatore inizia da 1
                         var output = document.getElementById('counter');
@@ -321,9 +324,9 @@
 
                             } else {
                                 if (goal1 > goal2) {
-                                    telecronaca.innerHTML = 'Partita Terminata, vince <b>PESCARA VECCHIA</B> con ben ' + goal1 + 'reti a ' + goal2;
+                                    telecronaca.innerHTML = 'Partita Terminata, vince <b>PESCARA VECCHIA</B> con ben ' + goal1 + ' reti a ' + goal2;
                                 } else if (goal2 > goal1) {
-                                    telecronaca.innerHTML = 'Partita Terminata, vince <b>MAI DOMI KIETI</B> con ben ' + goal2 + 'reti a ' + goal1;
+                                    telecronaca.innerHTML = 'Partita Terminata, vince <b>MAI DOMI KIETI</B> con ben ' + goal2 + ' reti a ' + goal1;
                                 } else { telecronaca.innerHTML = 'Partita Terminata, pareggio tra <b>PESCARA VECCHIA</b> e <b>MAI DOMI KIETI</b>'; }
 
                                 
