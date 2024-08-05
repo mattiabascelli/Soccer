@@ -1,0 +1,12 @@
+.hide {
+    display:none;
+    visibility: hidden;
+}
+
+.show {
+    display:block;
+}
+
+.red{
+    color:brown;
+}
